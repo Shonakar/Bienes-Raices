@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+
+    <link rel="stylesheet" href="build/css/app.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="Imagen Logo">
+                </a>
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="menu responsive">
+                </div>
+                <div class="derecha">
+                    <img src="build/img/dark-mode.svg" alt="imagen modo nocturno" class="btn-darkm">
+                    <nav class="navegacion">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+            <!--Barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1>Casa en venta frente al bosque</h1>
+
+        <picture>
+            <source srcset="build/img/destacada.webp" type="image/webp">
+            <source srcset="build/img/destacada.jpg" type="image/jpeg">
+            <img src="build/img/destacada.jpg" alt="imagen destacada" loading="lazy">
+        </picture>
+
+        <div class="resumen-propiedad">
+            <p class="precio">3.000.000</p>
+            <ul class="iconos-caracteristicas">
+                <li>
+                    <img class="icono" src="build/img/icono_wc.svg" alt="icono wc" loading="lazy">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img class="icono" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento" loading="lazy">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img class="icono" src="build/img/icono_dormitorio.svg" alt="icono dormitorio" loading="lazy">
+                    <p>4</p>
+                </li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequatur consequuntur vero natus
+                sint aperiam porro, enim velit! Corporis a incidunt consequuntur placeat commodi officia distinctio
+                rerum neque non earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ut soluta
+                enim tempora quae vero maxime minima? Voluptate tenetur ad corporis perspiciatis quia saepe. Consectetur
+                dolor quasi consequuntur rem incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta a totam atque veniam tempora consequatur,
+                amet dolorum corrupti fugit ex nulla, voluptates voluptatem itaque. Quasi soluta perferendis iure est
+                possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque ad nisi maxime
+                voluptatem eius excepturi debitis ea nulla ab, quia, minima unde numquam quis incidunt mollitia modi
+                distinctio blanditiis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem doloremque
+                inventore laboriosam similique eveniet voluptates, blanditiis non mollitia ducimus, eos alias! Quas
+                sequi dolorum quos numquam autem eligendi incidunt error!</p>
+
+        </div>
+
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <p class="copyright">Todos los derechos reservados 2021 &copy;</p>
+    </footer>
+
+    <!--Agregamos modernizr, para identificar si el navegador soporta ciertas caracteristicas-->
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

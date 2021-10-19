@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+
+    <link rel="stylesheet" href="build/css/app.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="Imagen Logo">
+                </a>
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="menu responsive">
+                </div>
+                <div class="derecha">
+                    <img src="build/img/dark-mode.svg" alt="imagen modo nocturno" class="btn-darkm">
+                    <nav class="navegacion">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div><!--Barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion">
+        <h1>Contacto</h1>
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada3.jpg" alt="Imagen Contacto" loading="lazy">
+        </picture>
+
+        <h2>Llene el formulario de contacto</h2>
+        <form action="" class="formulario">
+            <fieldset><!--El cuadrito-->
+                <legend>Informacion Personal</legend><!--El titulo del cuadrito-->
+                
+                <label for="nombre">Nombre</label><!--El for ayuda en que al hacer click en el label, automaticamente pone en llenar el campo-->
+                <input type="text" name="" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="" id="email" placeholder="Tu Email"><!--El type ayuda a la accesibilidad de simbolos en celular (por ej)-->
+
+                <label for="telefono">telefono</label>
+                <input type="tel" name="" id="telefono" placeholder="Tu Telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion sobre la Propiedad</legend>
+
+                <label for="opciones">Vende o Compra:</label>
+                <select name="" id="opciones">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="Compra">Compra</option><!--Value es lo que se manda al servidor como respuesta. El texto que ponemos dentro es lo que muestra le navegador-->
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="presupuesto">Precio o Presupuesto</label>
+                <input type="number" name="" id="presupuesto" placeholder="Tu precio o presupuesto">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser contactado</p>
+
+                <div class="forma-contacto">
+                    <label for="contactar-telefono">Telefono</label>
+                    <input type="radio" value="telefono" name="contacto" id="contactar-telefono">
+                    <label for="contactar-email">E-mail</label>
+                    <input type="radio" value="email" name="contacto" id="contactar-email">
+                    <!--Al tener el mismo name nos obliga a seleccionar uno o otro en el navegador, asi mismo esa sera la forma en la que podemos leer la informacion -->
+                </div>
+
+                <p>Si eligio telefono, elija la fecha y la hora </p>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="" id="fecha">
+
+                <label for="hora">Hora</label>
+                <input type="time" name="" id="hora" min="09:00" max="18:00"><!--En algunos navegadores no funciona min y max-->
+
+            </fieldset>
+            <input type="submit" value="Enviar" class="btn-verde">
+
+        </form>
+
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <p class="copyright">Todos los derechos reservados 2021 &copy;</p>
+    </footer>
+
+    <!--Agregamos modernizr, para identificar si el navegador soporta ciertas caracteristicas-->
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>
